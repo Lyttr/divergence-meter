@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Divergence Meter</title>
+<style>
+    body {
+        background-color: black;
+        color: #00FF00; /* 霓虹绿色 */
+        font-family: 'Courier New', Courier, monospace;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+    }
+    #container {
+        text-align: center;
+        border: 2px solid #00FF00; /* 霓虹绿色边框 */
+        padding: 20px;
+        border-radius: 10px;
+        background: rgba(0, 0, 0, 0.8); /* 半透明黑色背景 */
+        box-shadow: 0 0 20px #00FF00; /* 霓虹光晕 */
+    }
+    #title {
+        font-size: 50px;
+        color: #FF4500; /* 辉光管橙色 */
+        text-shadow: 0 0 10px #FF4500, 0 0 20px #FF4500, 0 0 30px #FF4500;
+        margin-bottom: 10px;
+        text-transform: uppercase; /* 全部大写 */
+        letter-spacing: 2px; /* 增加字间距 */
+    }
+    #description {
+        font-size: 20px;
+        color: #00FF00;
+        margin-bottom: 30px;
+        padding: 0 20px;
+    }
+    #hint {
+        font-size: 40px;
+        color: #FF00FF; /* 霓虹粉色 */
+        text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF;
+        margin-bottom: 20px;
+        text-transform: uppercase; /* 全部大写 */
+        letter-spacing: 2px; /* 增加字间距 */
+    }
+    .divider {
+        height: 2px;
+        background: #FF00FF; /* 霓虹粉色 */
+        margin: 20px 0;
+        box-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 30px;
+        line-height: 50px;
+    }
+    .form-group {
+        display: flex;
+        justify-content: space-between;
+        width: 400px;
+        margin-bottom: 20px;
+    }
+    label {
+        flex: 1;
+        text-align: right;
+        margin-right: 10px;
+        color: #FF00FF; /* 霓虹粉色 */
+        text-shadow: 0 0 10px #FF00FF, 0 0 20px #FF00FF, 0 0 30px #FF00FF;
+    }
+    input[type=text] {
+        flex: 2;
+        padding: 10px;
+        color: #FF4500; /* 辉光管橙色 */
+        background-color: black;
+        border: 2px solid #00FF00;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+        text-shadow: 0 0 5px #FF4500, 0 0 10px #FF4500, 0 0 15px #FF4500; /* 辉光管效果 */
+    }
+    input[type=text]::placeholder {
+        color: #555555;
+        text-align: center;
+    }
+    input[type=submit] {
+        color: black;
+        background-color: #00FF00; /* 霓虹绿色 */
+        border: none;
+        padding: 10px 20px;
+        font-size: 30px;
+        cursor: pointer;
+        margin-top: 20px;
+        border-radius: 5px;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    input[type=submit]:hover {
+        background-color: #FF00FF; /* 霓虹粉色 */
+        transform: scale(1.1); /* 放大 */
+    }
+</style>
+</head>
+<body>
+    <div id="container">
+        <h1 id="title">Divergence Meter</h1>
+        <p id="description">
+            Welcome to the Divergence Meter settings page. Here you can adjust the time settings for the divergence meter. 
+            Please enter the desired day, hour, minute, and second values, and then click 'Confirm' to save your changes.
+        </p>
+        
+        <div class="divider"></div>
+
+        <h2 id="hint" title="设置">SETTINGS</h2>
+
+        <form action="/submit" method="post">
+            <div class="form-group">
+                <label for="day">DAY</label>
+                <input type="text" id="day" name="day" placeholder="DD">
+            </div>
+            <div class="form-group">
+                <label for="hour">HOUR</label>
+                <input type="text" id="hour" name="hour" placeholder="HH">
+            </div>
+            <div class="form-group">
+                <label for="minute">MINUTE</label>
+                <input type="text" id="minute" name="minute" placeholder="MM">
+            </div>
+            <div class="form-group">
+                <label for="second">SECOND</label>
+                <input type="text" id="second" name="second" placeholder="SS">
+            </div>
+            <input type="submit" value="CONFIRM">
+        </form>
+    </div>
+</body>
+</html>
