@@ -1,6 +1,6 @@
 # Divergence Meter
 
-![Divergence Meter](https://your_image_url_here](https://github.com/Lyttr/divergence-meter/blob/main/divergencemeter.jpg)
+![Divergence Meter](https://github.com/Lyttr/divergence-meter/blob/main/divergencemeter.jpg)
 
 ## Description
 
