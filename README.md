@@ -37,6 +37,6 @@ This project is licensed under the [Creative Commons Attribution-NonCommercial 4
 
 ## Credits
 
-- Contributors: [Logicalshovel](https://github.com/your_username)
+- Contributors: [Lyttr](https://github.com/your_username)
 
 
