@@ -15,7 +15,7 @@ The Divergence Meter is a project based on Arduino and ESP32, designed to mimic 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your_username/divergence-meter.git`
+1. Clone the repository: `git clone https://github.com/Lyttr/divergence-meter.git`
 2. Install the necessary Arduino libraries:
    - WiFi.h
    - WebServer.h
