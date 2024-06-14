@@ -37,7 +37,6 @@ This project is licensed under the [Creative Commons Attribution-NonCommercial 4
 
 ## Credits
 
-- [Open-source libraries used](#)
-- Contributors: [Your Name](https://github.com/your_username)
+- Contributors: [Logicalshovel](https://github.com/your_username)
 
 
