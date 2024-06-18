@@ -5,6 +5,7 @@
 ## Description
 
 The Divergence Meter is a project based on Arduino and ESP32, designed to mimic the appearance of a divergence meter from the anime "Steins;Gate." This project utilizes a DS3231 RTC module for accurate timekeeping and HC595 shift registers to control the display of digits. The divergence value is displayed on neon-like numerical tubes, providing an aesthetic reminiscent of the original device from the anime.
+The hardware design is opensourced in https://oshwhub.com/logicalshovel/hui-guang-guan-qu-dong.
 
 ## Features
 
